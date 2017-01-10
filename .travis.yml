@@ -26,7 +26,7 @@ before_script:
   ## we use the '&' ampersand which tells
   ## travis to run this process in the background
   ## else it would block execution and hang travis
-  - npm start
+  - npm start &
 
 script:
   ## now run cypress in CI mode
