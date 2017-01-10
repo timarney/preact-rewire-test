@@ -26,8 +26,8 @@ before_script:
   ## we use the '&' ampersand which tells
   ## travis to run this process in the background
   ## else it would block execution and hang travis
-  - npm start ----scripts-version 0.8.2 --silent &
+  - npm start
 
 script:
   ## now run cypress in CI mode
-  - cypress ci 67670a2c-6745-4f72-b42d-9a7bf4f9d589
+  - cypress ci 9a7544a1-4a11-40b0-be77-5f633e1b3114
