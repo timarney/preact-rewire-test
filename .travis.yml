@@ -3,14 +3,11 @@ language: node_js
 node_js:
   - 6
 
-install:
-  - npm install
-
+before_install:
   ## install the Cypress CLI Tools
   ## which gives us access to the
   ## `cypress` command used below
   - npm install -g cypress-cli
-
 before_script:
   ## runs the 'start' script which
   ## boots our local app server on port 8888
